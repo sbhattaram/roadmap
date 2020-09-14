@@ -1,0 +1,67 @@
+{
+	"info": {
+		"_postman_id": "8138f458-7c1f-4094-877d-b4d80f55af0a",
+		"name": "ROAD-MAP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "IS-CONNECTED",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"origin\": \"Boston\",\r\n    \"destination\": \"New York\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9191/connected",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"connected"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "IS-CONNECTED",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9191/connected?origin=Boston&destination=New York",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"connected"
+					],
+					"query": [
+						{
+							"key": "origin",
+							"value": "Boston"
+						},
+						{
+							"key": "destination",
+							"value": "New York"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
